@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.spo2"
+    android:versionCode="4"
+    android:versionName="4.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_spo2"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat" >
+        <activity
+            android:name=".Spo2Splash"
+            android:configChanges="locale"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Credits"
+            android:label="@string/title_credits" >
+        </activity>
+        <activity
+            android:name=".Options"
+            android:label="@string/title_options" >
+        </activity>
+        <activity
+            android:name=".Language"
+            android:label="@string/title_language" >
+        </activity>
+        <activity
+            android:name=".DeviceListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MainScreen"
+            android:configChanges="locale"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".TxtWriter"
+            android:label="@string/title_activity_txt_writer" >
+        </activity>
+        <activity
+            android:name=".Spo2Start"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_spo2_start"
+            android:theme="@style/Theme.AppCompat" >
+ >
+        </activity>
+        <activity
+            android:name=".Mail"
+            android:label="@string/title_activity_mail" >
+        </activity>
+    </application>
+
+</manifest>

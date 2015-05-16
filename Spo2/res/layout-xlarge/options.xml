@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="4.92"
+        android:src="@drawable/heartbeat_halb" />
+
+    <Button
+        android:id="@+id/bt_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="select_language"
+        android:text="@string/language"
+        android:background="@drawable/button_custom" />
+
+    <Button
+        android:id="@+id/bt_profiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/profiles"
+        android:background="@drawable/button_custom"
+        android:onClick="profiles" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonAutoconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_profiles"
+        android:layout_alignRight="@+id/bt_profiles"
+        android:layout_below="@+id/bt_profiles"
+        android:layout_weight="1"
+        android:onClick="onAutoconnectToogleClicked"
+        android:textSize="18sp"
+        android:textOff="@string/autoconnect_off"
+        android:textOn="@string/autoconnect_on"
+        android:background="@drawable/button_custom" />
+
+</LinearLayout>

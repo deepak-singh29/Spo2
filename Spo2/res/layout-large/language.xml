@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        	 <ImageView
+        	     android:id="@+id/logo"
+        	     android:layout_width="match_parent"
+        	     android:layout_height="500dp"
+        	     android:layout_marginLeft="20dp"
+        	     android:layout_marginRight="10dp"
+        	     android:layout_marginTop="10dp"
+        	     android:src="@drawable/heartbeat_halb" />
+	 
+	 <Button
+	     android:id="@+id/bt_en"
+	     android:layout_width="match_parent"
+	     android:layout_height="100dp"
+	     android:layout_marginLeft="10dp"
+	     android:layout_marginRight="10dp"
+	     android:layout_below="@id/logo"
+	     android:onClick="select_english"
+	     android:text="@string/english"
+	     android:background="@drawable/button_custom" />
+
+    </RelativeLayout>
+
+</ScrollView>
